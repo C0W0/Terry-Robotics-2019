@@ -17,11 +17,16 @@ import com.ctre.phoenix.motorcontrol.can.VictorSPX;;
  */
 public class RobotMap {
 	public static VictorSPX moterLift;
+	public static VictorSPX motorLeftFront;
+	public static VictorSPX motorLeftBack;
+	public static VictorSPX motorRightFront;
+	public static VictorSPX motorRightBack;
 
-	// public static final int MotorLeft1ID = 0;
-	// public static final int MotorLeft2ID = 1;
-	// public static final int MotorRight1ID = 2;
-	// public static final int MotorRight2ID = 3;
+
+	public static final int leftFrontID = 9;
+	public static final int leftBackID = 10;
+	public static final int rightFrontID = 11;
+	public static final int rightBackID = 12;
 	public static final int joystickController = 0;
 	// public static final int LeftSrickYAxis = 1;
 	// public static final int RightSrickYAxis = 5;
@@ -38,5 +43,9 @@ public class RobotMap {
 	// public static int rangefinderModule = 1;
 	public static void init(){
 		moterLift = new VictorSPX(RobotMap.motorLiftID);
+		motorLeftFront = new VictorSPX(RobotMap.leftFrontID);
+		motorLeftFront = new VictorSPX(RobotMap.leftBackID);
+		motorLeftFront = new VictorSPX(RobotMap.rightFrontID);
+		motorLeftFront = new VictorSPX(RobotMap.rightBackID);
   	}
 }

@@ -9,6 +9,7 @@ package frc.robot;
 
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.command.Scheduler;
+import frc.robot.subsystems.DriveSubsystem;
 //import frc.robot.subsystems.DriveTrain;
 import frc.robot.subsystems.LiftSubsystem;
 
@@ -22,6 +23,7 @@ import frc.robot.subsystems.LiftSubsystem;
 public class Robot extends TimedRobot {
   // public static DriveTrain driveT = new DriveTrain();
   public static LiftSubsystem liftSubsystem;
+  public static DriveSubsystem driveSubsystem;
   public static OI m_oi;
 
   /**
@@ -32,6 +34,7 @@ public class Robot extends TimedRobot {
   public void robotInit() {
     RobotMap.init();
     liftSubsystem = new LiftSubsystem();
+    driveSubsystem = new DriveSubsystem();
     m_oi = new OI();
   }
 
