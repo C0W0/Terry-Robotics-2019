@@ -26,6 +26,16 @@ public class OI {
   public double getLifterRawAxis(int axis){
     return JoystickController.getRawAxis(axis);
   }
+
+  public double getDriverRawAxis(int axis){
+    return JoystickController.getRawAxis(axis);
+  }
+  
+  public double getSteeringRawAxis(int axis){
+    return JoystickController.getRawAxis(axis);
+  }
+
+
   public boolean getUpLimitStatus(){
     return liftUpLimit.get();
   }

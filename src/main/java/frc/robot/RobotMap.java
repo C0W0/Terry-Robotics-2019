@@ -28,14 +28,14 @@ public class RobotMap {
 	public static final int rightFrontID = 11;
 	public static final int rightBackID = 12;
 	public static final int joystickController = 0;
-	// public static final int LeftSrickYAxis = 1;
-	// public static final int RightSrickYAxis = 5;
 	public static final int motorLiftID = 8;
 	public static final int liftUpButton = 4;
 	public static final int liftDownButton = 2;
 	public static final int liftAxis = 1;
 	public static final int liftUpLimit = 4;
 	public static final double liftRange = 0.02;
+	public static final int driverAxis = 6;//need to be changed
+	public static final int steeringAxis = 7;//need to be changed
 
 	// If you are using multiple modules, make sure to define both the port
 	// number and the module. For example you with a rangefinder:

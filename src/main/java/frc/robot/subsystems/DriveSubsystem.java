@@ -27,17 +27,26 @@ public class DriveSubsystem extends Subsystem {
     setDefaultCommand(driveCommand = new DriveCommand());
   }
 
-  public void setLeftFrontMotor(int range){
+  public void setLeftFrontMotor(double range){
     RobotMap.motorLeftFront.set(ControlMode.PercentOutput,range);
   }
-  public void setLeftBackMotor(int range){
+  public void setLeftBackMotor(double range){
     RobotMap.motorLeftBack.set(ControlMode.PercentOutput,range);
   }
-  public void setRightFrontMotor(int range){
+  public void setRightFrontMotor(double range){
     RobotMap.motorRightFront.set(ControlMode.PercentOutput,range);
   }
-  public void setRightBackMotor(int range){
+  public void setRightBackMotor(double range){
     RobotMap.motorRightBack.set(ControlMode.PercentOutput,range);
+  }
+
+  public void setLeftMotors(double range){
+    RobotMap.motorLeftFront.set(ControlMode.PercentOutput,range);
+    RobotMap.motorLeftBack.set(ControlMode.PercentOutput, range);
+  }
+  public void setRightMotors(double range){
+    RobotMap.motorRightFront.set(ControlMode.PercentOutput,range);
+    RobotMap.motorRightBack.set(ControlMode.PercentOutput, range);
   }
 
 }
