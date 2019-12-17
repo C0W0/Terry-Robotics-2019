@@ -17,20 +17,25 @@ import com.ctre.phoenix.motorcontrol.can.VictorSPX;;
  */
 public class RobotMap {
 	public static VictorSPX moterLift;
+	public static VictorSPX motorLeftFront;
+	public static VictorSPX motorLeftBack;
+	public static VictorSPX motorRightFront;
+	public static VictorSPX motorRightBack;
 
-	// public static final int MotorLeft1ID = 0;
-	// public static final int MotorLeft2ID = 1;
-	// public static final int MotorRight1ID = 2;
-	// public static final int MotorRight2ID = 3;
+
+	public static final int leftFrontID = 9;
+	public static final int leftBackID = 10;
+	public static final int rightFrontID = 11;
+	public static final int rightBackID = 12;
 	public static final int joystickController = 0;
-	// public static final int LeftSrickYAxis = 1;
-	// public static final int RightSrickYAxis = 5;
 	public static final int motorLiftID = 8;
 	public static final int liftUpButton = 4;
 	public static final int liftDownButton = 2;
 	public static final int liftAxis = 1;
 	public static final int liftUpLimit = 4;
 	public static final double liftRange = 0.02;
+	public static final int driverAxis = 6;//need to be changed
+	public static final int steeringAxis = 7;//need to be changed
 
 	// If you are using multiple modules, make sure to define both the port
 	// number and the module. For example you with a rangefinder:
@@ -38,5 +43,9 @@ public class RobotMap {
 	// public static int rangefinderModule = 1;
 	public static void init(){
 		moterLift = new VictorSPX(RobotMap.motorLiftID);
+		motorLeftFront = new VictorSPX(RobotMap.leftFrontID);
+		motorLeftFront = new VictorSPX(RobotMap.leftBackID);
+		motorLeftFront = new VictorSPX(RobotMap.rightFrontID);
+		motorLeftFront = new VictorSPX(RobotMap.rightBackID);
   	}
 }
